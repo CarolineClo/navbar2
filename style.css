@@ -1,0 +1,66 @@
+:root {
+  --drkgrn-color: #33aa7d;
+  --pale-color: #f4fffd;
+  --yellow-color: #e3e74d;
+  --purple-color: #2c3959;
+  --dark-purple: #011936;
+  --pink-color: #f77e9f;
+}
+header {
+  background-color: var(--yellow-color);
+}
+.hidden {
+  display: none;
+}
+i,
+button {
+  border: none;
+  color: var(--pale-color);
+  background-color: var(--drkgrn-color);
+}
+.nav2 {
+  max-width: 1200px;
+  width: 100%;
+  background-color: var(--drkgrn-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  border: 1px var(--dark-purple) solid;
+}
+
+.mobileNav {
+  padding: 1rem;
+  overflow: auto;
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+ul#navDesk {
+  list-style: none;
+  color: var(--pale-color);
+  text-align: center;
+  padding: 0;
+}
+li {
+  padding: 1rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .icon {
+    display: none;
+  }
+
+  .nav2 {
+    flex-direction: row;
+  }
+
+  ul#navDesk {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    align-items: center;
+    padding: 0 1rem 0 0;
+  }
+}
